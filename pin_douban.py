@@ -149,7 +149,7 @@ def douban_long(user_name , passwd , querys = "流浪地球" , start = 0 , pages
                 break
         ms.click()
         time.sleep(5)
-    driver.close()
+    driver.quit()
     testx = pd.DataFrame({"title":title_to_save,"text":text_to_save})
     testx.to_csv('db_longcomments.csv',encoding='utf_8_sig')
 
